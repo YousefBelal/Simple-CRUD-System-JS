@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container d-flex gap-3 flex-column pt-3">
+      <div
+        class="d-flex align-items-center gap-3 pt-3 flex-column col-4 shadow rounded border p-3"
+      >
+        <input
+          id="phoneName"
+          class="form-control"
+          type="text"
+          placeholder="Enter new Phone Name"
+        />
+        <input
+          id="phonePrice"
+          class="form-control"
+          type="number"
+          placeholder="Enter new Phone Price"
+        />
+        <input
+          id="phoneQty"
+          class="form-control"
+          type="number"
+          placeholder="Enter new Phone Qty"
+        />
+        <button class="btn btn-success col-12" onclick="addNewPhone()">
+          Add New Phone
+        </button>
+      </div>
+      <table class="table table-dark table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Phone Name</th>
+            <th>Phone Price</th>
+            <th>Phone Qty</th>
+            <th>Phone Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 
+        <tr>
+            <th>Phone No</th>
+            <th>Phone Name</th>
+            <th>Phone Price</th>
+            <th>Phone Qty</th>
+            <th>Phone Qty * Phone Price</th>
+        </tr> 
+        --></tbody>
+      </table>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
